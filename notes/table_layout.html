@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/reboot.css"/>
+    <link rel="stylesheet" href="../fonts/font.css"/>
+    <link rel="stylesheet" href="../css/prism.css"/>
+
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/notes.css"/>
+</head>
+
+<body>
+
+<main id="main" class="notes">
+    <p>
+        Tables were the original grid. They allow you to specify cells in rows and columns.
+        You can span individual cells across columns and/or rows.
+        Also the tables will resize with the browser window to an extent.
+    </p>
+    <p>
+        The problems with tables for layout are many fold.
+        For one, they require a lot of extra markup in your HTML to make them work. This can be difficult to author and maintain.
+    </p>
+    <p>
+        They don't allow empty space without the use of non-breaking-spaces <b>&amp;nbsp;</b> or <b>spacer.gif</b>s.
+        Some pros are the ability to align horizontally and vertically very easily.
+    </p>
+    <p>
+        And worst of all, they don't allow you to change the order or layout with media queries for different screen sizes.
+        <small>(Note: yes you can change the elements using CSS to blocks and inline-blocks and what not, but at that point it's no longer a table!)</small>
+    </p>
+</main>
+
+<script src="../js/prism.js"></script>
+<script src="../js/notes.js"></script>
+</body>
+</html>

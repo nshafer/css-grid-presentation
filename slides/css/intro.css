@@ -1,0 +1,39 @@
+.intro-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+.intro-grid div {
+    min-width: 10em;
+    min-height: 10em;
+}
+
+.intro-grid div .box {
+    padding: 1em;
+}
+
+.intro-grid div:nth-of-type(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+.intro-grid div:nth-of-type(5) {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+}
+
+.intro-grid div:nth-of-type(7) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+.intro-grid__title {
+    margin: 0;
+    line-height: 1;
+}
+
+.intro-grid__subtitle {
+    margin: 0;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CSS Grid is Awesome!</title>
+
+    <link rel="stylesheet" href="css/reboot.css"/>
+    <link rel="stylesheet" href="fonts/font.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script defer src="js/fontawesome-all.min.js"></script>
+</head>
+
+<body>
+    <div id="app" :class="{'hide-notes': !show_notes}">
+        <div class="background"></div>
+
+        <h1 class="title">
+            CSS Grid is Awesome!
+        </h1>
+
+        <h2 class="subtitle">
+            {{ currentSlide.title }}
+        </h2>
+
+        <aside class="location">
+            <i class="fab fa-github"></i>
+            github.com/nshafer/css-grid-presentation
+        </aside>
+
+        <div class="pager">
+            <button class="pager__button" @click="previousSlide"><i class="fas fa-chevron-left"></i></button>
+            {{ currentSlideNumber }} / {{ slideCount }}
+            <button class="pager__button" @click="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <object id="slide" type="text/html" :data="currentSlideURL"></object>
+
+        <object v-if="show_notes" id="notes" type="text/html" :data="currentNotesURL"></object>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

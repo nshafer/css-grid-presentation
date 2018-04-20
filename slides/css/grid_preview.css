@@ -1,0 +1,99 @@
+.preview {
+    display: grid;
+    grid-template-columns: 2fr 3fr 4fr;
+}
+
+.preview__layout {
+    border: 1px solid var(--gray-400);
+    padding: 1em;
+    overflow: hidden;
+}
+
+.preview__mobile {
+}
+
+.preview__tablet {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas:
+        "title title"
+        "image image"
+        "content links";
+}
+
+.preview__desktop {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content 2.5em auto;
+    grid-template-areas:
+        "image image"
+        "title title"
+        "links content";
+}
+
+.preview__title {
+    grid-area: title;
+    height: 2em;
+    width: 80%;
+    background: var(--light-green);
+    border: 1px solid var(--green);
+    margin-bottom: .5em;
+}
+
+.preview__links {
+    grid-area: links;
+    margin-bottom: .5em;
+}
+
+.preview__links span {
+    display: inline-block;
+    background: var(--light-orange);
+    border: 1px solid var(--orange);
+    width: 4em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+.preview__links span:nth-of-type(2) {
+    width: 4.5em;
+}
+
+.preview__links span:nth-of-type(3) {
+    width: 3em;
+}
+
+.preview__image {
+    grid-area: image;
+    width: 100%;
+    padding-bottom: 50%;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-600);
+    margin-bottom: .5em;
+    background: linear-gradient(to bottom, rgba(117,117,117,1) 0%, rgba(153,153,153,1) 100%);
+}
+
+.preview__content {
+    grid-area: content;
+}
+
+.preview__content span {
+    display: block;
+    width: 80%;
+    height: 1em;
+    margin-bottom: .5em;
+    background: var(--light-cyan);
+    border: 1px solid var(--cyan);
+}
+
+.preview__content span:nth-of-type(2) { width: 68%; }
+.preview__content span:nth-of-type(3) { width: 95%; }
+.preview__content span:nth-of-type(4) { width: 87%; }
+.preview__content span:nth-of-type(5) { width: 85%; }
+.preview__content span:nth-of-type(6) { width: 93%; }
+.preview__content span:nth-of-type(7) { width: 87%; }
+.preview__content span:nth-of-type(8) { width: 91%; }
+.preview__content span:nth-of-type(9) { width: 94%; }
+.preview__content span:nth-of-type(10) { width: 99%; }
+.preview__content span:nth-of-type(11) { width: 78%; }
+.preview__content span:nth-of-type(12) { width: 43%; }

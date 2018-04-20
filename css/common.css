@@ -1,0 +1,261 @@
+/* Common CSS for all pages and slides */
+
+:root {
+    --white: #fdfdfd;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --black:    #000;
+
+    --red: hsl(0, 65%, 51%);
+    --light-red: hsl(3, 79%, 69%);
+    --pink: hsl(336, 78%, 43%);
+    --light-pink: hsl(331, 66%, 66%);
+    --purple: hsl(282, 68%, 38%);
+    --light-purple: hsl(277, 53%, 63%);
+    --blue: hsl(210, 79%, 46%);
+    --light-blue: hsl(206, 56%, 60%);
+    --cyan: hsl(186, 100%, 33%);
+    --light-cyan: hsl(196, 42%, 63%);
+    --teal: hsl(173, 100%, 24%);
+    --light-teal: hsl(176, 49%, 56%);
+    --green: hsl(123, 43%, 39%);
+    --light-green: hsl(125, 33%, 64%);
+    --yellow: hsl(43, 96%, 58%);
+    --light-yellow: hsl(39, 92%, 80%);
+    --orange: hsl(30, 100%, 48%);
+    --light-orange: hsl(22, 84%, 76%);
+    --brown: hsl(14, 26%, 29%);
+    --light-brown: hsl(6, 55%, 71%);
+    --gray: hsl(0, 0%, 38%);
+    --light-gray: hsl(0, 0%, 84%);
+    --bluegray: hsl(199, 18%, 33%);
+    --light-bluegray: hsl(201, 36%, 75%);
+
+    --primary: var(--blue);
+}
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: var(--white);
+    color: var(--gray-900);
+}
+
+@media (min-width: 1600px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.1em;
+}
+
+
+/* Color utilities */
+.white-bg { background-color: var(--white); color: var(--white); }
+.black-bg { background-color: var(--black); color: var(--white); }
+.red-bg { background-color: var(--red); color: var(--white); }
+.pink-bg { background-color: var(--pink); color: var(--white); }
+.purple-bg { background-color: var(--purple); color: var(--white); }
+.blue-bg { background-color: var(--blue); color: var(--white); }
+.cyan-bg { background-color: var(--cyan); color: var(--white); }
+.teal-bg { background-color: var(--teal); color: var(--white); }
+.green-bg { background-color: var(--green); color: var(--white); }
+.yellow-bg { background-color: var(--yellow); color: var(--white); }
+.orange-bg { background-color: var(--orange); color: var(--white); }
+.brown-bg { background-color: var(--brown); color: var(--white); }
+.gray-bg { background-color: var(--gray); color: var(--white); }
+.bluegray-bg { background-color: var(--bluegray); color: var(--white); }
+
+
+/* Boxes */
+.box {
+    padding: .25em;
+    min-width: 100%;
+    min-height: 100%;
+    --border-thickness: 2px;
+}
+
+.box.-white { background-color: var(--white); border: var(--border-thickness) solid var(--gray-100); }
+.box.-black { background-color: var(--gray-600); border: var(--border-thickness) solid var(--black); }
+.box.-red { background-color: var(--light-red); border: var(--border-thickness) solid var(--red); }
+.box.-pink { background-color: var(--light-pink); border: var(--border-thickness) solid var(--pink); }
+.box.-purple { background-color: var(--light-purple); border: var(--border-thickness) solid var(--purple); }
+.box.-blue { background-color: var(--light-blue); border: var(--border-thickness) solid var(--blue); }
+.box.-cyan { background-color: var(--light-cyan); border: var(--border-thickness) solid var(--cyan); }
+.box.-teal { background-color: var(--light-teal); border: var(--border-thickness) solid var(--teal); }
+.box.-green { background-color: var(--light-green); border: var(--border-thickness) solid var(--green); }
+.box.-yellow { background-color: var(--light-yellow); border: var(--border-thickness) solid var(--yellow); }
+.box.-orange { background-color: var(--light-orange); border: var(--border-thickness) solid var(--orange); }
+.box.-brown { background-color: var(--light-brown); border: var(--border-thickness) solid var(--brown); }
+.box.-gray { background-color: var(--light-gray); border: var(--border-thickness) solid var(--gray); }
+.box.-bluegray { background-color: var(--light-bluegray); border: var(--border-thickness) solid var(--bluegray); }
+
+/* Alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* Images */
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Code snippets */
+pre[class*="language-"] {
+    margin: 0 0 1em;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: .1em .3em;
+    border-radius: .2em;
+    white-space: normal;
+}
+
+/* Mock browser */
+.mock-browser {
+    border: 1px solid var(--gray-300);
+    display: grid;
+    grid-template-rows: min-content auto 2em;
+    border-radius: .3em;
+}
+
+.mock-browser.-resizable {
+    resize: both;
+    overflow: hidden;
+}
+
+.mock-browser.-resizable-x {
+    resize: horizontal;
+    overflow: hidden;
+}
+
+.mock-browser.-resizable-y {
+    resize: vertical;
+    overflow: hidden;
+}
+
+.mock-browser__chrome {
+    display: flex;
+    background: var(--gray-300);
+    padding: .5em;
+    color: var(--gray-700);
+}
+
+.mock-browser__control + .mock-browser__control {
+    margin-left: .5em;
+}
+
+.mock-browser__back {
+}
+
+.mock-browser__forward {
+    color: var(--gray-500);
+}
+
+.mock-browser__url {
+    flex: 1;
+    background: var(--white);
+    border-radius: 5px;
+    padding: 0 .5em;
+    color: var(--gray-500);
+}
+
+.mock-browser__body {
+    padding: 1em;
+}
+
+.mock-browser__body h1 {
+    font-size: 2em;
+}
+
+.mock-browser__body h2 {
+    font-size: 1.5em;
+}
+
+.mock-browser__body h3 {
+    font-size: 1.3em;
+}
+
+.mock-browser__body h4 {
+    font-size: 1.2em;
+}
+
+.mock-browser__body h5 {
+    font-size: 1.1em;
+}
+
+.mock-browser__body h6 {
+    font-size: 1em;
+}
+
+
+.mock-browser__iframe {
+    width: 100%;
+    height: calc(100% - 2em - 2em);
+    border: none;
+}
+
+.mock-browser__status {
+    height: 2em;
+    /*background: var(--gray-200);*/
+    text-align: right;
+    padding-right: 1em;
+}
+
+
+/* Tables */
+.mock-table {
+}
+
+.mock-table td.two { height: 2em; }
+.mock-table td.four { height: 4em; }
+.mock-table td.six { height: 6em; }
+.mock-table td.eight { height: 8em; }
+.mock-table td.ten { height: 10em; }
+.mock-table td.fifteen { height: 15em; }
+.mock-table td.twenty { height: 20em; }

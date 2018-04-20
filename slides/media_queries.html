@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CSS Grid is Awesome!</title>
+
+    <link rel="stylesheet" href="../css/reboot.css"/>
+    <link rel="stylesheet" href="../fonts/font.css"/>
+    <link rel="stylesheet" href="../css/prism.css"/>
+
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/slide.css"/>
+
+    <script defer src="../js/fontawesome-all.min.js"></script>
+</head>
+
+<body>
+    <main class="slide-layout -columns -equal">
+        <div>
+            <pre><code class="language-css"><!--
+                .square {
+                    background: red;
+                }
+
+                @media (min-width: 400px) {
+                    .square {
+                        background: green;
+                    }
+                }
+
+                @media (min-width: 500px) and (max-width: 600px) {
+                    .square {
+                        background: blue;
+                    }
+                }
+            --></code></pre>
+        </div>
+
+        <div class="mock-browser -resizable-x">
+            <div class="mock-browser__chrome">
+                <div class="mock-browser__control mock-browser__back"><i class="fas fa-arrow-circle-left"></i></div>
+                <div class="mock-browser__control mock-browser__forward"><i class="fas fa-arrow-circle-right"></i></div>
+                <div class="mock-browser__control mock-browser__refresh"><i class="fas fa-undo" data-fa-transform="flip-h"></i></div>
+                <div class="mock-browser__control mock-browser__url">localhost:8000</div>
+            </div>
+            <iframe class="mock-browser__iframe" src="pages/media_queries.html"></iframe>
+            <div class="mock-browser__status">
+                Resize me!
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/prism.js"></script>
+    <script src="../js/slide.js"></script>
+</body>
+</html>

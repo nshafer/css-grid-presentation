@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CSS Grid is Awesome!</title>
+
+    <link rel="stylesheet" href="../../css/reboot.css"/>
+    <link rel="stylesheet" href="../../fonts/font.css"/>
+
+    <link rel="stylesheet" href="../../css/common.css"/>
+
+    <style>
+        body {
+            padding: 1em;
+        }
+
+        .row {
+            padding: 1em;
+        }
+
+        .col:nth-of-type(1) {
+            height: 5em;
+        }
+
+        .col:nth-of-type(2) {
+            height: 20em;
+        }
+
+        @media (min-width: 500px) {
+            .row {
+                display: flex;
+            }
+
+            .col:nth-of-type(1) {
+                flex: 1;
+                height: 20em;
+                order: 2;
+            }
+
+            .col:nth-of-type(2) {
+                flex: 3;
+                height: 25em;
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="row clearfix box -gray">
+    <div class="col">
+        <div class="box -orange"></div>
+    </div>
+    <div class="col">
+        <div class="box -blue"></div>
+    </div>
+</div>
+
+<script src="../../js/slide.js"></script>
+</body>
+</html>
+
+
+
+
