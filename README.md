@@ -25,8 +25,20 @@ Thus there are a few slides that explain CSS so they can follow along.
         - Grid Cell
         - Grid Area
     - grid-template-rows, grid-template-columns
+        -
     - grid-row, grid-column
     - grid-template-areas, grid-area
+- Advanced usage
+    - grid-template values
+        - Fixed-values (100px)
+        - Percentage (50%)
+        - Flex (1fr)
+    - minmax
+    - min-content, max-content
+    - fit-content
+- Using it today
+    - Browser compatibility (caniuse.com)
+
     
 
 ### Note about how this presentation was built
