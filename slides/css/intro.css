@@ -1,17 +1,18 @@
 .intro-grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
+    height: 100%;
 }
 
 .intro-grid div {
-    min-width: 10em;
-    min-height: 10em;
+    /*min-width: 8em;*/
+    /*min-height: 8em;*/
 }
 
 .intro-grid div .box {
-    padding: 1em;
+    /*padding: 1em;*/
 }
 
 .intro-grid div:nth-of-type(1) {
