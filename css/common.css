@@ -13,28 +13,51 @@
     --gray-900: #212529;
     --black:    #000;
 
+    --dark-red: hsl(2, 61%, 27%);
     --red: hsl(0, 65%, 51%);
     --light-red: hsl(3, 79%, 69%);
+
+    --dark-pink: hsl(335, 75%, 20%);
     --pink: hsl(336, 78%, 43%);
     --light-pink: hsl(331, 66%, 66%);
+
+    --dark-purple: hsl(279, 64%, 18%);
     --purple: hsl(282, 68%, 38%);
     --light-purple: hsl(277, 53%, 63%);
+
+    --dark-blue: hsl(216, 73%, 23%);
     --blue: hsl(210, 79%, 46%);
     --light-blue: hsl(206, 56%, 60%);
+
+    --dark-cyan: hsl(188, 100%, 15%);
     --cyan: hsl(186, 100%, 33%);
     --light-cyan: hsl(196, 42%, 63%);
+
+    --dark-teal: hsl(170, 100%, 14%);
     --teal: hsl(173, 100%, 24%);
     --light-teal: hsl(176, 49%, 56%);
+
+    --dark-green: hsl(123, 42%, 20%);
     --green: hsl(123, 43%, 39%);
     --light-green: hsl(125, 33%, 64%);
+
+    --dark-yellow: hsl(46, 69%, 28%);
     --yellow: hsl(43, 96%, 58%);
     --light-yellow: hsl(39, 92%, 80%);
+
+    --dark-orange: hsl(30, 100%, 27%);
     --orange: hsl(30, 100%, 48%);
     --light-orange: hsl(22, 84%, 76%);
+
+    --dark-brown: hsl(12, 33%, 14%);
     --brown: hsl(14, 26%, 29%);
     --light-brown: hsl(6, 55%, 71%);
+
+    --dark-gray: hsl(0, 0%, 20%);
     --gray: hsl(0, 0%, 38%);
     --light-gray: hsl(0, 0%, 84%);
+
+    --dark-bluegray: hsl(201, 20%, 20%);
     --bluegray: hsl(199, 18%, 33%);
     --light-bluegray: hsl(201, 36%, 75%);
 
@@ -103,26 +126,31 @@ h6 {
 
 /* Boxes */
 .box {
-    padding: .25em;
+    padding: .5em;
     min-width: 100%;
     min-height: 100%;
     --border-thickness: 2px;
+    font-size: 1.5em;
+    line-height: 1;
+    border: 2px solid var(--gray-500);
 }
 
-.box.-white { background-color: var(--white); border: var(--border-thickness) solid var(--gray-100); }
-.box.-black { background-color: var(--gray-600); border: var(--border-thickness) solid var(--black); }
-.box.-red { background-color: var(--light-red); border: var(--border-thickness) solid var(--red); }
-.box.-pink { background-color: var(--light-pink); border: var(--border-thickness) solid var(--pink); }
-.box.-purple { background-color: var(--light-purple); border: var(--border-thickness) solid var(--purple); }
-.box.-blue { background-color: var(--light-blue); border: var(--border-thickness) solid var(--blue); }
-.box.-cyan { background-color: var(--light-cyan); border: var(--border-thickness) solid var(--cyan); }
-.box.-teal { background-color: var(--light-teal); border: var(--border-thickness) solid var(--teal); }
-.box.-green { background-color: var(--light-green); border: var(--border-thickness) solid var(--green); }
-.box.-yellow { background-color: var(--light-yellow); border: var(--border-thickness) solid var(--yellow); }
-.box.-orange { background-color: var(--light-orange); border: var(--border-thickness) solid var(--orange); }
-.box.-brown { background-color: var(--light-brown); border: var(--border-thickness) solid var(--brown); }
-.box.-gray { background-color: var(--light-gray); border: var(--border-thickness) solid var(--gray); }
-.box.-bluegray { background-color: var(--light-bluegray); border: var(--border-thickness) solid var(--bluegray); }
+.box.-white { background-color: var(--white); border-color: var(--gray-200); color: var(--gray-700)}
+.box.-black { background-color: var(--gray-600); border-color: var(--black); color: var(--black)}
+
+.box.-red { background-color: var(--light-red); border-color: var(--red); color: var(--dark-red)}
+.box.-pink { background-color: var(--light-pink); border-color: var(--pink); color: var(--dark-pink)}
+.box.-purple { background-color: var(--light-purple); border-color: var(--purple); color: var(--dark-purple)}
+.box.-blue { background-color: var(--light-blue); border-color: var(--blue); color: var(--dark-blue)}
+.box.-cyan { background-color: var(--light-cyan); border-color: var(--cyan); color: var(--dark-cyan)}
+.box.-teal { background-color: var(--light-teal); border-color: var(--teal); color: var(--dark-teal)}
+.box.-green { background-color: var(--light-green); border-color: var(--green); color: var(--dark-green)}
+.box.-yellow { background-color: var(--light-yellow); border-color: var(--yellow); color: var(--dark-yellow)}
+.box.-orange { background-color: var(--light-orange); border-color: var(--orange); color: var(--dark-orange)}
+.box.-brown { background-color: var(--light-brown); border-color: var(--brown); color: var(--dark-brown)}
+.box.-gray { background-color: var(--light-gray); border-color: var(--gray); color: var(--dark-gray)}
+.box.-bluegray { background-color: var(--light-bluegray); border-color: var(--bluegray); color: var(--dark-bluegray)}
+
 
 /* Alignment */
 .text-center {

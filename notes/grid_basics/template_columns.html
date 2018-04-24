@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../css/reboot.css"/>
+    <link rel="stylesheet" href="../../fonts/font.css"/>
+    <link rel="stylesheet" href="../../css/prism.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/notes.css"/>
+</head>
+
+<body>
+
+<main id="main" class="notes">
+    <p>
+        Define your columns with <b>grid-template-columns</b>.
+        Every time the grid adds a new row, it will use this "template" to define how the columns are sized.
+    </p>
+    <p>
+        In this case there are two rows added, each of them with 4 columns, each sized at 1/4 of the total width of the container.
+        You can specify absolute sizes (px, em), percentages and more.
+    </p>
+    <p>
+        What if we wanted 3 equally sized columns?
+        We need a non-integer percent, such as <b>33.333333334%</b>
+        or to use <code class="language-css">calc(100/3)</code> and have the browser calculate it.
+    </p>
+    <p>
+        However, we get a new tool to make this easier.
+    </p>
+</main>
+
+<script src="../js/prism.js"></script>
+<script src="../../js/notes.js"></script>
+</body>
+</html>
