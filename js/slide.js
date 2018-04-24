@@ -9,7 +9,22 @@ window.addEventListener('keyup', function(e) {
 });
 
 window.addEventListener('message', function(e) {
-    if (window.parent) {
+    if (e.data.fontSize) {
+        const body = document.querySelector('body');
+        body.style.fontSize = e.data.fontSize;
+    } else if (window.parent) {
         window.parent.postMessage(e.data, "*");
     }
 });
+
+/* Resize child font size to match the parent slide. */
+(function() {
+    const page = document.querySelector('.mock-browser__iframe');
+    if (page) {
+        page.addEventListener('load', function() {
+            const body = document.querySelector('body');
+            const body_style = window.getComputedStyle(body, null);
+            page.contentWindow.postMessage({'fontSize': body_style.fontSize}, "*");
+        });
+    }
+})();

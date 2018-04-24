@@ -24,7 +24,7 @@
                 "blue  orange"
                 "green orange";
             height: 30em;
-            grid-gap: 1em;
+            grid-gap: 1rem;
         }
 
         .blue {
@@ -46,9 +46,9 @@
         <div>
             <pre><code class="language-html"><!--
                 <div class="container">
-                    <div class="item blue"> ... </div></div>
-                    <div class="item green"> ... </div></div>
-                    <div class="item orange"> ... </div></div>
+                    <div class="blue"> ... </div></div>
+                    <div class="green"> ... </div></div>
+                    <div class="orange"> ... </div></div>
                 </div>
             --></code></pre>
             <pre><code class="language-css"><!--
@@ -59,17 +59,15 @@
                     grid-template-areas:
                         "blue  orange"
                         "green orange";
-                    grid-gap: 1em;
+                    grid-gap: 1rem;
                 }
 
                 .blue {
                     grid-area: blue;
                 }
-
                 .green {
                     grid-area: green;
                 }
-
                 .orange {
                     grid-area: orange;
                 }
@@ -85,9 +83,9 @@
             </div>
             <div class="mock-browser__body">
                 <div class="container">
-                    <div class="item blue"><div class="box -blue"></div></div>
-                    <div class="item green"><div class="box -green"></div></div>
-                    <div class="item orange"><div class="box -orange"></div></div>
+                    <div class="blue"><div class="box -blue"></div></div>
+                    <div class="green"><div class="box -green"></div></div>
+                    <div class="orange"><div class="box -orange"></div></div>
                 </div>
             </div>
         </div>

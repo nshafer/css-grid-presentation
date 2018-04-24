@@ -7,7 +7,7 @@ html, body {
 #app {
     height: 100%;
     display: grid;
-    grid-template-rows: min-content min-content auto 20%;
+    grid-template-rows: min-content min-content auto 25%;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-areas:
         "title    pager subtitle"

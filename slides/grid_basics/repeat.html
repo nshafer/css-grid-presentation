@@ -18,7 +18,7 @@
     <style>
         .container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 2fr repeat(3, 1fr);
         }
 
         .box {
@@ -43,8 +43,8 @@
             <pre><code class="language-css"><!--
         .container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* equivalent to "1fr 1fr 1fr" */
+            grid-template-columns: 2fr repeat(3, 1fr);
+            /* equivalent to "2fr 1fr 1fr 1fr" */
         }
             --></code></pre>
         </div>
