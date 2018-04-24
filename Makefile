@@ -4,4 +4,7 @@ default:
 watch:
 	browser-sync -c bs-config.js
 
-.PHONY: default watch
+deploy:
+	git pull --ff-only
+
+.PHONY: default watch deploy
