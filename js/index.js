@@ -28,6 +28,10 @@ const app = new Vue({
             return `slides/${this.currentSlide.slide}`;
         },
 
+        hasNotes() {
+            return this.currentSlide.notes !== undefined;
+        },
+
         currentNotesURL() {
             if (this.currentSlide.notes) {
                 return `notes/${this.currentSlide.notes}`;

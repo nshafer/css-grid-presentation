@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="app" :class="{'hide-notes': !show_notes}">
+    <div id="app" :class="{'hide-notes': hasNotes && !show_notes}">
         <div class="background"></div>
 
         <h1 class="title">
@@ -41,7 +41,7 @@
             <object id="slide" type="text/html" :data="currentSlideURL"></object>
         </div>
 
-        <object v-show="show_notes" id="notes" type="text/html" :data="currentNotesURL"></object>
+        <object v-show="hasNotes && show_notes" id="notes" type="text/html" :data="currentNotesURL"></object>
     </div>
 
     <script src="js/vue.js"></script>

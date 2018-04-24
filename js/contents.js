@@ -32,5 +32,7 @@ const slides = [
     { slide: "grid_basics/grid_line_placement.html", notes: "grid_basics/grid_line_placement.html", title: "Grid basics: Placing Items by Line" },
     { slide: "grid_basics/grid_area_placement.html", notes: "grid_basics/grid_area_placement.html", title: "Grid basics: Placing Items by Area" },
     { slide: "grid_basics/grid_area_responsive.html", notes: "grid_basics/grid_area_responsive.html", title: "Grid basics: Responsive Template Areas" },
+    { slide: "browser_support.html", notes: "browser_support.html", title: "Browser Support (Apr 2018)" },
+    { slide: "resources.html", title: "More Resources" },
 ];
 
