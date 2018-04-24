@@ -1,4 +1,5 @@
 /* slide.js - Common javascript for the slides */
+"use strict";
 
 // Pass keyboard events to the parent so that keyboard shortcuts work even if the iframe has grabbed focus.
 window.addEventListener('keyup', function(e) {
