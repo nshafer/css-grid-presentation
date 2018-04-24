@@ -1,5 +1,7 @@
 # CSS Grid Presentation
 
+You can view this presentation at [normal.tech/css-grid-presentation/](http://www.normal.tech/css-grid-presentation/).
+
 This is the presentation I gave to [Digital Flagstaff](http://digitalflagstaff.com/) in April of 2018.
 
 The goals of the presentation were to be a high-level overview of the challenge of layout on the web,
