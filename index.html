@@ -37,9 +37,7 @@
             <button class="pager__button" @click="nextSlide"><i class="fas fa-chevron-right"></i></button>
         </div>
 
-        <div class="slide">
-            <object id="slide" type="text/html" :data="currentSlideURL"></object>
-        </div>
+        <object id="slide" type="text/html" :data="currentSlideURL"></object>
 
         <object v-show="hasNotes && show_notes" id="notes" type="text/html" :data="currentNotesURL"></object>
     </div>

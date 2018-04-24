@@ -261,7 +261,6 @@ pre[class*="language-"] {
     font-size: 1em;
 }
 
-
 .mock-browser__iframe {
     width: 100%;
     height: calc(100% - 2em - 2em);
@@ -269,8 +268,7 @@ pre[class*="language-"] {
 }
 
 .mock-browser__status {
-    height: 2em;
-    /*background: var(--gray-200);*/
+    height: 2rem;
     text-align: right;
     padding-right: 1em;
 }
