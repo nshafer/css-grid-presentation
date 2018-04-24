@@ -107,23 +107,6 @@ h6 {
 }
 
 
-/* Color utilities */
-.white-bg { background-color: var(--white); color: var(--white); }
-.black-bg { background-color: var(--black); color: var(--white); }
-.red-bg { background-color: var(--red); color: var(--white); }
-.pink-bg { background-color: var(--pink); color: var(--white); }
-.purple-bg { background-color: var(--purple); color: var(--white); }
-.blue-bg { background-color: var(--blue); color: var(--white); }
-.cyan-bg { background-color: var(--cyan); color: var(--white); }
-.teal-bg { background-color: var(--teal); color: var(--white); }
-.green-bg { background-color: var(--green); color: var(--white); }
-.yellow-bg { background-color: var(--yellow); color: var(--white); }
-.orange-bg { background-color: var(--orange); color: var(--white); }
-.brown-bg { background-color: var(--brown); color: var(--white); }
-.gray-bg { background-color: var(--gray); color: var(--white); }
-.bluegray-bg { background-color: var(--bluegray); color: var(--white); }
-
-
 /* Boxes */
 .box {
     padding: .5em;
@@ -135,22 +118,42 @@ h6 {
     border: 2px solid var(--gray-500);
 }
 
-.box.-white { background-color: var(--white); border-color: var(--gray-200); color: var(--gray-700)}
-.box.-black { background-color: var(--gray-600); border-color: var(--black); color: var(--black)}
+.box.-white {    background-color: var(--white);          border-color: var(--gray-200); color: var(--gray-700)}
+.box.-black {    background-color: var(--gray-600);       border-color: var(--black);    color: var(--black)}
 
-.box.-red { background-color: var(--light-red); border-color: var(--red); color: var(--dark-red)}
-.box.-pink { background-color: var(--light-pink); border-color: var(--pink); color: var(--dark-pink)}
-.box.-purple { background-color: var(--light-purple); border-color: var(--purple); color: var(--dark-purple)}
-.box.-blue { background-color: var(--light-blue); border-color: var(--blue); color: var(--dark-blue)}
-.box.-cyan { background-color: var(--light-cyan); border-color: var(--cyan); color: var(--dark-cyan)}
-.box.-teal { background-color: var(--light-teal); border-color: var(--teal); color: var(--dark-teal)}
-.box.-green { background-color: var(--light-green); border-color: var(--green); color: var(--dark-green)}
-.box.-yellow { background-color: var(--light-yellow); border-color: var(--yellow); color: var(--dark-yellow)}
-.box.-orange { background-color: var(--light-orange); border-color: var(--orange); color: var(--dark-orange)}
-.box.-brown { background-color: var(--light-brown); border-color: var(--brown); color: var(--dark-brown)}
-.box.-gray { background-color: var(--light-gray); border-color: var(--gray); color: var(--dark-gray)}
+.box.-red {      background-color: var(--light-red);      border-color: var(--red);      color: var(--dark-red)}
+.box.-pink {     background-color: var(--light-pink);     border-color: var(--pink);     color: var(--dark-pink)}
+.box.-purple {   background-color: var(--light-purple);   border-color: var(--purple);   color: var(--dark-purple)}
+.box.-blue {     background-color: var(--light-blue);     border-color: var(--blue);     color: var(--dark-blue)}
+.box.-cyan {     background-color: var(--light-cyan);     border-color: var(--cyan);     color: var(--dark-cyan)}
+.box.-teal {     background-color: var(--light-teal);     border-color: var(--teal);     color: var(--dark-teal)}
+.box.-green {    background-color: var(--light-green);    border-color: var(--green);    color: var(--dark-green)}
+.box.-yellow {   background-color: var(--light-yellow);   border-color: var(--yellow);   color: var(--dark-yellow)}
+.box.-orange {   background-color: var(--light-orange);   border-color: var(--orange);   color: var(--dark-orange)}
+.box.-brown {    background-color: var(--light-brown);    border-color: var(--brown);    color: var(--dark-brown)}
+.box.-gray {     background-color: var(--light-gray);     border-color: var(--gray);     color: var(--dark-gray)}
 .box.-bluegray { background-color: var(--light-bluegray); border-color: var(--bluegray); color: var(--dark-bluegray)}
 
+.box.-dark-red {      background-color: var(--red);      border-color: var(--dark-red);      color: var(--light-red)}
+.box.-dark-pink {     background-color: var(--pink);     border-color: var(--dark-pink);     color: var(--light-pink)}
+.box.-dark-purple {   background-color: var(--purple);   border-color: var(--dark-purple);   color: var(--light-purple)}
+.box.-dark-blue {     background-color: var(--blue);     border-color: var(--dark-blue);     color: var(--light-blue)}
+.box.-dark-cyan {     background-color: var(--cyan);     border-color: var(--dark-cyan);     color: var(--light-cyan)}
+.box.-dark-teal {     background-color: var(--teal);     border-color: var(--dark-teal);     color: var(--light-teal)}
+.box.-dark-green {    background-color: var(--green);    border-color: var(--dark-green);    color: var(--light-green)}
+.box.-dark-yellow {   background-color: var(--yellow);   border-color: var(--dark-yellow);   color: var(--light-yellow)}
+.box.-dark-orange {   background-color: var(--orange);   border-color: var(--dark-orange);   color: var(--light-orange)}
+.box.-dark-brown {    background-color: var(--brown);    border-color: var(--dark-brown);    color: var(--light-brown)}
+.box.-dark-gray {     background-color: var(--gray);     border-color: var(--dark-gray);     color: var(--light-gray)}
+.box.-dark-bluegray { background-color: var(--bluegray); border-color: var(--dark-bluegray); color: var(--light-bluegray)}
+
+.box.-white-text {
+    color: var(--white);
+}
+
+.box.-no-border {
+    border: none;
+}
 
 /* Alignment */
 .text-center {
